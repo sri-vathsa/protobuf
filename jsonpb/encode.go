@@ -57,7 +57,7 @@ type Marshaler struct {
 // The JSON marshaling must follow the proto to JSON specification:
 //	https://developers.google.com/protocol-buffers/docs/proto3#json
 //
-// Deprecated: Custom types should implement protobuf reflection instead.
+//
 type JSONPBMarshaler interface {
 	MarshalJSONPB(*Marshaler) ([]byte, error)
 }

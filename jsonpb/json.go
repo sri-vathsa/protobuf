@@ -9,8 +9,7 @@
 // Do not rely on the default behavior of the standard encoding/json package
 // when called on generated message types as it does not operate correctly.
 //
-// Deprecated: Use the "google.golang.org/protobuf/encoding/protojson"
-// package instead.
+
 package jsonpb
 
 import (

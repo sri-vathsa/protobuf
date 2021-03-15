@@ -58,7 +58,6 @@ type Unmarshaler struct {
 // The JSON unmarshaling must follow the JSON to proto specification:
 //	https://developers.google.com/protocol-buffers/docs/proto3#json
 //
-// Deprecated: Custom types should implement protobuf reflection instead.
 type JSONPBUnmarshaler interface {
 	UnmarshalJSONPB(*Unmarshaler, []byte) error
 }
