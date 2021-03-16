@@ -9,7 +9,6 @@
 // See https://developers.google.com/protocol-buffers/docs/gotutorial for
 // more information.
 //
-// Deprecated: Use the "google.golang.org/protobuf/proto" package instead.
 package proto
 
 import (
