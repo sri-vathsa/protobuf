@@ -49,7 +49,6 @@ func Timestamp(ts *timestamppb.Timestamp) (time.Time, error) {
 
 // TimestampNow returns a google.protobuf.Timestamp for the current time.
 //
-// Deprecated: Call the timestamppb.Now function instead.
 func TimestampNow() *timestamppb.Timestamp {
 	ts, err := TimestampProto(time.Now())
 	if err != nil {
@@ -75,8 +74,6 @@ func TimestampProto(t time.Time) (*timestamppb.Timestamp, error) {
 // TimestampString returns the RFC 3339 string for valid Timestamps.
 // For invalid Timestamps, it returns an error message in parentheses.
 //
-// Deprecated: Call the ts.AsTime method instead,
-// followed by a call to the Format method on the time.Time value.
 func TimestampString(ts *timestamppb.Timestamp) string {
 	t, err := Timestamp(ts)
 	if err != nil {

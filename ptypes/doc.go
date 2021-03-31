@@ -4,7 +4,6 @@
 
 // Package ptypes provides functionality for interacting with well-known types.
 //
-// Deprecated: Well-known types have specialized functionality directly
 // injected into the generated packages for each message type.
 // See the deprecation notice for each function for the suggested alternative.
 package ptypes

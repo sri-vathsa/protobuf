@@ -22,7 +22,6 @@ const (
 // Duration converts a durationpb.Duration to a time.Duration.
 // Duration returns an error if dur is invalid or overflows a time.Duration.
 //
-// Deprecated: Call the dur.AsDuration and dur.CheckValid methods instead.
 func Duration(dur *durationpb.Duration) (time.Duration, error) {
 	if err := validateDuration(dur); err != nil {
 		return 0, err
@@ -42,7 +41,6 @@ func Duration(dur *durationpb.Duration) (time.Duration, error) {
 
 // DurationProto converts a time.Duration to a durationpb.Duration.
 //
-// Deprecated: Call the durationpb.New function instead.
 func DurationProto(d time.Duration) *durationpb.Duration {
 	nanos := d.Nanoseconds()
 	secs := nanos / 1e9
