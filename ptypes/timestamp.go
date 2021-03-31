@@ -34,7 +34,7 @@ const (
 // A nil Timestamp returns an error. The first return value in that case is
 // undefined.
 //
-// Deprecated: Call the ts.AsTime and ts.CheckValid methods instead.
+
 func Timestamp(ts *timestamppb.Timestamp) (time.Time, error) {
 	// Don't return the zero value on error, because corresponds to a valid
 	// timestamp. Instead return whatever time.Unix gives us.
